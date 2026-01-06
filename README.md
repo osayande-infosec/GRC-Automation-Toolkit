@@ -16,7 +16,9 @@ This toolkit provides production-ready automation modules for:
 - **Vulnerability Management** - CVSS-based prioritization and remediation workflows
 - **Compliance Tracking** - Multi-framework control status and gap analysis (NIST CSF, ISO 27001, SOC 2)
 - **Risk Register** - Quantitative risk scoring, treatment tracking, and executive reporting
+- **Vendor Risk Management** - NIST SP 800-161 aligned third-party risk assessment (TPRM)
 - **AWS Security Labs** - Cloud security implementations and hands-on exercises
+- **Compliance Platform** - Vanta-style FastAPI backend for continuous compliance automation
 
 ## Repository Structure
 
@@ -28,7 +30,9 @@ GRC-Automation-Toolkit/
 │   ├── security-log-analyzer/   # Threat detection engine
 │   ├── vulnerability-management/# CVSS-based prioritization
 │   ├── compliance-tracker/      # Framework control mapping
-│   └── risk-register/           # Enterprise risk management
+│   ├── risk-register/           # Enterprise risk management
+│   └── vendor-risk-management/  # NIST SP 800-161 TPRM workflow
+├── compliance-platform/         # FastAPI compliance SaaS backend
 ├── grc-compliance-monitor/      # AWS security labs
 │   └── AWS-Labs/
 │       ├── Lab-01-Shared-Responsibility/
@@ -39,6 +43,7 @@ GRC-Automation-Toolkit/
 │       ├── Lab-06-Threat-Detection/
 │       ├── Lab-07-Incident-Response/
 │       └── Lab-08-Zero-Trust/
+├── tests/                       # pytest test suite
 └── email-security-project/      # Email security controls
 ```
 
