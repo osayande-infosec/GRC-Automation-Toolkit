@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.venv/
+
+# Node/Tooling
+node_modules/
+
+# Editors/OS
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Env/Secrets
+.env
+.env.*
+
+# Build / temp
+dist/
+build/
+*.log
+.cache/
