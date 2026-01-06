@@ -1,0 +1,58 @@
+name: GRC Toolkit CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  lint-and-test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ['3.9', '3.10', '3.11', '3.12']
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Verify Python scripts syntax
+        run: |
+          cd grc-automation-tools
+          python -m py_compile credential-auditor/password_checker.py
+          python -m py_compile credential-auditor/password_checker_batch.py
+          python -m py_compile asset-management/asset_inventory.py
+          python -m py_compile security-log-analyzer/log_analyzer.py
+          python -m py_compile vulnerability-management/vuln_reporter.py
+          python -m py_compile compliance-tracker/compliance_dashboard.py
+          python -m py_compile risk-register/risk_assessment.py
+
+      - name: Run credential auditor with sample data
+        run: |
+          cd grc-automation-tools
+          python credential-auditor/password_checker.py --password "TestP@ssw0rd123!"
+
+      - name: Run asset management with sample data
+        run: |
+          cd grc-automation-tools
+          python asset-management/asset_inventory.py --csv asset-management/inventory.sample.csv
+
+      - name: Run vulnerability management with sample data
+        run: |
+          cd grc-automation-tools
+          python vulnerability-management/vuln_reporter.py --json vulnerability-management/findings.sample.json
+
+      - name: Run compliance tracker with sample data
+        run: |
+          cd grc-automation-tools
+          python compliance-tracker/compliance_dashboard.py --json compliance-tracker/controls.sample.json
+
+      - name: Run risk register with sample data
+        run: |
+          cd grc-automation-tools
+          python risk-register/risk_assessment.py --csv risk-register/risks.sample.csv
