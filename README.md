@@ -100,6 +100,137 @@ python risk-register/risk_assessment.py --csv risk-register/risks.sample.csv --v
 | Compliance Tracker | Control status mapping | NIST CSF, ISO 27001, SOC 2 | JSON |
 | Risk Register | Enterprise risk management | ISO 31000, NIST RMF | CSV |
 
+## Sample Output
+
+### Credential Auditor
+```
+==================================================
+Password Assessment Results
+==================================================
+Score:    70/100
+Verdict:  Strong
+Entropy:  36.05 bits
+
+Findings:
+  • Length OK (11 chars). Consider 12+ for better security.
+  • Good character diversity (4/4 classes).
+  • Moderate entropy (36.1 bits).
+==================================================
+```
+
+### Asset Management
+```
+============================================================
+ASSET INVENTORY REPORT
+============================================================
+
+📊 SUMMARY
+   Total Assets: 25
+   Compliance Rate: 80.0%
+
+📁 BY TYPE:
+   • Server: 13
+   • Network: 5
+   • Workstation: 5
+
+🔔 ALERTS:
+   ⚠️  2 asset(s) past end-of-life
+   ⚠️  4 asset(s) not updated in 90+ days
+   🚨 4 non-compliant asset(s)
+============================================================
+```
+
+### Security Log Analyzer
+```
+============================================================
+SECURITY LOG ANALYSIS REPORT
+============================================================
+
+🚨 SECURITY ALERTS (7)
+   🟠 [HIGH] Brute Force: 1 IP(s) with 10+ failed auth attempts
+   🟠 [HIGH] Shell Injection: 12 request(s) detected
+   🟡 [MEDIUM] Path Traversal: 1 request(s) detected
+   🟡 [MEDIUM] Scanner Detected: 2 IP(s) using known scanner tools
+   🟡 [MEDIUM] XSS Attempt: 1 request(s) detected
+
+📈 STATUS CODE DISTRIBUTION
+      200: 13 (37.1%)
+   ⚠️ 401: 11 (31.4%) - Failed authentication attempts
+   ⚠️ 403: 2 (5.7%)   - Forbidden access attempts
+============================================================
+```
+
+### Vulnerability Management
+```
+============================================================
+VULNERABILITY ASSESSMENT REPORT
+============================================================
+
+🔴 OVERALL RISK SCORE: 100/100
+
+📊 SUMMARY
+   Total Findings: 10
+   Unique Vulnerabilities: 10
+   Affected Assets: 6
+
+🎯 BY SEVERITY
+   🔴 Critical: 2
+   🟠 High: 3
+   🟡 Medium: 3
+
+🚨 CRITICAL FINDINGS (2)
+   • Apache HTTP Server Remote Code Execution (CVSS: 9.8)
+   • SMBv1 Protocol Enabled (CVSS: 9.3)
+============================================================
+```
+
+### Compliance Tracker
+```
+============================================================
+COMPLIANCE DASHBOARD
+Framework: NIST Cybersecurity Framework
+============================================================
+
+🟡 COMPLIANCE SCORE: 71.9% - PARTIAL COMPLIANCE
+   [██████████████░░░░░░]
+
+📊 CONTROL STATUS SUMMARY
+   ✅ Implemented: 9 (56.2%)
+   ❌ Not Implemented: 2 (12.5%)
+   🔶 Partial: 5 (31.2%)
+
+📁 BY CONTROL FAMILY
+   • Detect: 3/3 implemented (100%)
+   • Identify: 3/4 implemented (75%)
+   • Protect: 3/5 implemented (60%)
+   • Recover: 0/2 implemented (0%)
+   • Respond: 0/2 implemented (0%)
+============================================================
+```
+
+### Risk Register
+```
+============================================================
+RISK ASSESSMENT REPORT
+============================================================
+
+📈 RISK METRICS
+   Total Risks: 15
+   Average Inherent Score: 12.1/25
+   Average Residual Score: 5.6/25
+   Risk Reduction: 53.8%
+
+🎯 RISK DISTRIBUTION
+   🔴 Critical: 2 (13.3%)
+   🟠 High: 7 (46.7%)
+   🟡 Medium: 6 (40.0%)
+
+🚨 CRITICAL RISKS (2)
+   • Ransomware Attack (Score: 20 → 8)
+   • Legacy System Compromise (Score: 20 → 12)
+============================================================
+```
+
 ## AWS Security Labs
 
 The `grc-compliance-monitor/AWS-Labs/` directory contains enterprise cloud security exercises:
