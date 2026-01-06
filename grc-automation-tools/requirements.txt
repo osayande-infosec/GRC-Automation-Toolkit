@@ -1,0 +1,10 @@
+# GRC Automation Toolkit - Python Dependencies
+# No external dependencies required - uses Python standard library only
+#
+# The modules are intentionally designed with minimal dependencies
+# to maximize portability and ease of use.
+#
+# Optional dependencies for extended functionality:
+# pip install rich          # Enhanced terminal output
+# pip install pandas        # Advanced data analysis
+# pip install matplotlib    # Visualization/charts

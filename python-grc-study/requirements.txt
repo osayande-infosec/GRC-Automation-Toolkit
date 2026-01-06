@@ -1,1 +1,0 @@
-# Add lab-specific dependencies here (kept empty to avoid heavy installs)

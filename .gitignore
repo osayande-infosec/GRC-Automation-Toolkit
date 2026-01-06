@@ -1,9 +1,16 @@
 # Python
 __pycache__/
 *.py[cod]
+*.pyo
+*.pyd
 .pytest_cache/
 .mypy_cache/
 .venv/
+venv/
+env/
+.Python
+*.egg-info/
+*.egg
 
 # Node/Tooling
 node_modules/
@@ -13,13 +20,70 @@ node_modules/
 Thumbs.db
 .idea/
 .vscode/
+*.swp
+*.swo
+*~
 
-# Env/Secrets
+# Env/Secrets - CRITICAL SECURITY
 .env
 .env.*
+.env.local
+.env.production
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+credentials.json
+secrets.json
+service-account*.json
+*_secret*
+*_credentials*
+aws_credentials
+.aws/
+.ssh/
+id_rsa*
+*.keystore
+
+# Configuration with potential secrets
+config.local.*
+settings.local.*
+local_settings.py
 
 # Build / temp
 dist/
 build/
 *.log
 .cache/
+tmp/
+temp/
+
+# Audit/Assessment outputs - may contain sensitive findings
+*_audit_report.*
+*_assessment_results.*
+*_findings_export.*
+*.evidence/
+
+# Real data files (use .sample.* for examples)
+passwords.txt
+!passwords.sample.txt
+inventory.csv
+!inventory.sample.csv
+access.log
+!access.sample.log
+findings.json
+!findings.sample.json
+controls.json
+!controls.sample.json
+risks.csv
+!risks.sample.csv
+
+# Backup files
+*.bak
+*.backup
+*.old
+
+# Terraform state (if AWS labs use IaC)
+*.tfstate
+*.tfstate.backup
+.terraform/

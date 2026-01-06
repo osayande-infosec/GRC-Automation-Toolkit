@@ -1,0 +1,27 @@
+asset_id,name,asset_type,owner,department,os,criticality,status,last_updated,eol_date,compliance_status,location,ip_address
+SRV-PRD-WEB-001,acme-web-prod-01,server,Marcus Chen,Platform Engineering,Ubuntu 22.04.3 LTS,critical,active,2025-12-15,2027-04-01,compliant,US-EAST-DC1-R12,10.10.100.11
+SRV-PRD-WEB-002,acme-web-prod-02,server,Marcus Chen,Platform Engineering,Ubuntu 22.04.3 LTS,critical,active,2025-12-15,2027-04-01,compliant,US-EAST-DC1-R12,10.10.100.12
+SRV-PRD-DB-001,acme-postgres-master,server,Priya Sharma,Database Administration,RHEL 9.3,critical,active,2025-12-01,2032-05-31,compliant,US-EAST-DC1-R08,10.10.50.10
+SRV-PRD-DB-002,acme-postgres-replica,server,Priya Sharma,Database Administration,RHEL 9.3,critical,active,2025-12-01,2032-05-31,compliant,US-WEST-DC2-R08,10.20.50.10
+SRV-PRD-APP-001,acme-api-gateway-01,server,DevOps Team,Platform Engineering,Amazon Linux 2023,critical,active,2025-12-20,2028-03-15,compliant,AWS-US-EAST-1,172.31.10.50
+SRV-DEV-001,acme-dev-sandbox,server,Engineering Team,Software Development,Ubuntu 24.04 LTS,low,active,2025-11-30,2029-04-01,compliant,AWS-US-EAST-1,172.31.200.10
+SRV-STG-001,acme-staging-env,server,QA Team,Quality Assurance,Ubuntu 22.04.3 LTS,medium,active,2025-12-10,2027-04-01,compliant,AWS-US-EAST-1,172.31.150.20
+NET-FW-001,palo-edge-fw-01,network,Network Security,IT Security,PAN-OS 11.1.2,critical,active,2025-12-18,,compliant,US-EAST-DC1-DMZ,10.10.1.1
+NET-FW-002,palo-edge-fw-02,network,Network Security,IT Security,PAN-OS 11.1.2,critical,active,2025-12-18,,compliant,US-WEST-DC2-DMZ,10.20.1.1
+NET-SW-CORE-001,nexus-core-01,network,Network Operations,IT Infrastructure,NX-OS 10.3(4),critical,active,2025-11-25,,compliant,US-EAST-DC1-R01,10.10.0.1
+NET-SW-CORE-002,nexus-core-02,network,Network Operations,IT Infrastructure,NX-OS 10.3(4),critical,active,2025-11-25,,compliant,US-WEST-DC2-R01,10.20.0.1
+WKS-FIN-001,fin-ws-jthompson,workstation,Jennifer Thompson,Finance,Windows 11 Enterprise 23H2,high,active,2025-12-22,,compliant,HQ-FL03-FIN,192.168.10.101
+WKS-FIN-002,fin-ws-rgarcia,workstation,Roberto Garcia,Finance,Windows 11 Enterprise 23H2,high,active,2025-12-22,,compliant,HQ-FL03-FIN,192.168.10.102
+WKS-EXEC-001,exec-ws-ceo,workstation,Executive Office,Executive Leadership,macOS Sonoma 14.2,critical,active,2025-12-28,,compliant,HQ-FL05-EXEC,192.168.5.10
+WKS-HR-001,hr-ws-slee,workstation,Sarah Lee,Human Resources,Windows 11 Enterprise 23H2,high,active,2025-10-15,,non-compliant,HQ-FL02-HR,192.168.20.50
+WKS-HR-002,hr-ws-mwilson,workstation,Michael Wilson,Human Resources,Windows 10 Enterprise 22H2,medium,active,2025-06-20,2025-10-14,non-compliant,HQ-FL02-HR,192.168.20.51
+SRV-LEG-ERP-001,legacy-sap-erp,server,Enterprise Apps,Finance,Windows Server 2016,high,active,2025-01-10,2027-01-12,non-compliant,US-EAST-DC1-R15,10.10.200.5
+SRV-LEG-HR-001,legacy-hr-system,server,Enterprise Apps,Human Resources,Windows Server 2012 R2,medium,active,2024-08-15,2023-10-10,non-compliant,US-EAST-DC1-R15,10.10.200.10
+SEC-SIEM-001,splunk-indexer-01,server,Security Operations,IT Security,RHEL 8.9,critical,active,2025-12-28,,compliant,US-EAST-DC1-R05,10.10.30.20
+SEC-SIEM-002,splunk-search-head,server,Security Operations,IT Security,RHEL 8.9,critical,active,2025-12-28,,compliant,US-EAST-DC1-R05,10.10.30.21
+SEC-EDR-001,crowdstrike-console,cloud,Security Operations,IT Security,SaaS,critical,active,2025-12-30,,compliant,AWS-US-EAST-1,N/A
+VPN-001,globalprotect-gw-01,network,Network Security,IT Security,PAN-OS 11.1.2,critical,active,2025-12-18,,compliant,AWS-US-EAST-1,52.71.xxx.xxx
+SRV-BKP-001,veeam-backup-server,server,IT Operations,IT Infrastructure,Windows Server 2022,critical,active,2025-12-05,,compliant,US-EAST-DC1-R10,10.10.40.10
+SRV-CI-001,jenkins-controller,server,DevOps Team,Platform Engineering,Ubuntu 22.04.3 LTS,high,active,2025-12-12,,compliant,AWS-US-EAST-1,172.31.80.10
+IOT-HVAC-001,building-hvac-ctrl,iot,Facilities,Building Operations,Proprietary,low,active,2025-03-01,,not_applicable,HQ-MECH,192.168.250.10
+

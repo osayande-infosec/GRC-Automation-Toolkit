@@ -1,0 +1,16 @@
+risk_id,title,description,category,likelihood,impact,controls,residual_likelihood,residual_impact,owner,treatment,status,due_date,notes
+RISK-001,Ransomware Attack,Organization-wide ransomware infection causing data encryption and business disruption,technical,4,5,"EDR deployment, network segmentation, backup procedures",2,4,CISO,mitigate,in_treatment,2026-03-01,Critical risk - board visibility required
+RISK-002,Data Breach via Phishing,Sensitive data exposure through successful phishing attack,technical,4,4,"Security awareness training, email filtering, MFA",3,3,Security Team,mitigate,in_treatment,2026-02-15,Monthly phishing simulations in progress
+RISK-003,Legacy System Compromise,Exploitation of unpatched legacy ERP system,technical,5,4,"Network isolation, enhanced monitoring",4,3,IT Operations,mitigate,open,2026-01-31,System replacement budgeted for Q3
+RISK-004,Insider Threat,Malicious or negligent employee causing data loss,operational,3,4,"DLP tools, access controls, monitoring",2,3,HR/Security,mitigate,in_treatment,2026-04-01,
+RISK-005,Third-Party Breach,Vendor compromise leading to supply chain attack,operational,3,4,"Vendor risk assessments, contract clauses",3,3,Procurement,transfer,in_treatment,2026-02-28,Cyber insurance in place
+RISK-006,Regulatory Non-Compliance,Failure to meet GDPR/CCPA requirements resulting in fines,compliance,3,5,"Privacy program, data mapping, DPO appointed",2,4,Legal/Privacy,mitigate,in_treatment,2026-06-01,
+RISK-007,Cloud Misconfiguration,Exposed cloud resources due to configuration errors,technical,4,3,"Cloud security posture management, IaC scanning",2,2,Cloud Team,mitigate,in_treatment,2026-02-01,CSPM tool deployed
+RISK-008,Business Email Compromise,Financial fraud through executive impersonation,financial,3,4,"Email authentication (DMARC), approval workflows",2,3,Finance,mitigate,in_treatment,2026-03-15,
+RISK-009,DDoS Attack,Service unavailability due to distributed denial of service,technical,3,3,"CDN, DDoS protection service",1,2,Network Team,mitigate,closed,,DDoS protection implemented
+RISK-010,Physical Security Breach,Unauthorized physical access to data center,operational,2,4,"Access controls, surveillance, guards",1,3,Facilities,mitigate,in_treatment,2026-04-01,
+RISK-011,Key Person Dependency,Critical knowledge loss if key staff leave,operational,3,3,"Documentation, cross-training",2,2,HR,mitigate,open,2026-05-01,
+RISK-012,Natural Disaster,Data center disruption from flood or earthquake,operational,2,5,"Geographic redundancy, DR site",1,3,IT Operations,mitigate,in_treatment,2026-07-01,DR site deployment in progress
+RISK-013,API Security Vulnerability,Data exposure through insecure API endpoints,technical,3,3,"API gateway, input validation, testing",2,2,Development,mitigate,in_treatment,2026-02-15,API security review scheduled
+RISK-014,Password Compromise,Account takeover through weak or stolen credentials,technical,4,3,"MFA, password policy, breach monitoring",2,2,Identity Team,mitigate,in_treatment,2026-01-15,MFA rollout 90% complete
+RISK-015,Audit Findings,Material findings in external audit,compliance,2,3,"Internal audit program, control monitoring",1,2,Internal Audit,accept,accepted,,Residual risk accepted by management
