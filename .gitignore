@@ -83,6 +83,11 @@ risks.csv
 *.backup
 *.old
 
+# Personal/Marketing files - not for repo
+LINKEDIN_POST.md
+SOCIAL_MEDIA*.md
+MARKETING*.md
+
 # Terraform state (if AWS labs use IaC)
 *.tfstate
 *.tfstate.backup
