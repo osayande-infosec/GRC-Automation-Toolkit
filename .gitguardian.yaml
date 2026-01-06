@@ -1,0 +1,13 @@
+# GitGuardian Configuration
+# https://docs.gitguardian.com/ggshield-docs/reference/configuration
+
+# Paths to ignore from scanning (sample/test data files)
+paths-ignore:
+  - "**/passwords.sample.txt"
+  - "**/*.sample.*"
+  - "**/sample_data/**"
+  - "**/test_data/**"
+  - "**/fixtures/**"
+
+# These paths contain intentional sample credentials for GRC testing tools
+# All data in these files is fabricated for demonstration purposes
